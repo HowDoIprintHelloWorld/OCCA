@@ -1,0 +1,15 @@
+<!DOCTYPE HTML5>
+<head>
+  <title>OCCA</title>
+  <script src={{ url_for("static", filename="base.js") }} defer> </script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+</head>
+<body>
+  <h1>OCCA - Open chat communications application</h1>
+  <div id="history">
+ </div>
+  <div id="chatbox">
+    <input  type="text" value="" onclick="this.select()" size="20" id="inpt">
+    <button type="button" value="Send" onclick="send()" size="20" id="sbmit">Send!</button>
+  </div>
+</body>
